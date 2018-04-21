@@ -1,14 +1,16 @@
 <meta charset="utf-8">
 <script>
     var distancia;
-    distancia=prompt("Digite a distância percorrida até a Caelum");
-    document.write("Distância: " + distancia+"km");
+    distancia=parseFloat(prompt("Digite a distância percorrida até a Caelum").replace(",","."));
+    document.write("Distância: " + distancia.toFixed(2).replace(".",",")+"km");
 </script>
 
 <h3>Carro:</h3>
 <script>
-    var valor_estacionamento=parseFloat(prompt("Digite o valor do estacionamento"));
-    var valor_gasolina=parseFloat(prompt("Digite o valor gasto com gasolina").replace(",","."));
+    var valor_estacionamento=parseFloat(prompt("Digite o valor do estacionamento").replace(",", "."));
+    var preco_por_litro=parseFloat(prompt("Digite o preço por litro da gasolina").replace(",", "."));
+    var consumo=parseFloat(prompt("Digite o consumo do carro").replace(",", "."));
+    var valor_gasolina= preco_por_litro/consumo*distancia
     var valor_gasto_carro=valor_estacionamento+valor_gasolina;
     document.write("Valor estacionamento: R$"+valor_estacionamento.toFixed(2).replace(".",",")+"<br>");
     document.write("Valor gasolina: R$"+valor_gasolina.toFixed(2).replace(".",",")+"<br>");
