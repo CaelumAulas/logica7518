@@ -19,4 +19,8 @@
 
 
 <h3>Uber:</h3>
-Valor gasto: R$26,39
+<script>
+    var taxa_inicial=2;
+    var valor_gasto_uber=taxa_inicial+1.40*distancia;
+    document.write("Valor gasto: R$"+valor_gasto_uber.toFixed(2).replace(".",","));
+</script>
