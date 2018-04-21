@@ -8,7 +8,7 @@
 <h3>Carro:</h3>
 <script>
     var valor_estacionamento=parseFloat(prompt("Digite o valor do estacionamento"));
-    var valor_gasolina=parseFloat(prompt("Digite o valor gasto com gasolina"));
+    var valor_gasolina=parseFloat(prompt("Digite o valor gasto com gasolina").replace(",","."));
     var valor_gasto_carro=valor_estacionamento+valor_gasolina;
     document.write("Valor estacionamento: R$"+valor_estacionamento.toFixed(2).replace(".",",")+"<br>");
     document.write("Valor gasolina: R$"+valor_gasolina.toFixed(2).replace(".",",")+"<br>");
