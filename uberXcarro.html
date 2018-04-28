@@ -1,27 +1,21 @@
 <meta charset="utf-8">
+<script src="funcoes.js"></script>
 <script>
-    var valor;
-    var texto;
-    
-    texto = "Digite a distância percorrida até a Caelum";
     var distancia;
-    distancia=pegaNumeroRealDoUsuario();//Digite a distância percorrida até a Caelum
-    valor=distancia;
-    document.write("Distância: " + converteDecimalPraTexto()+"km");
+    distancia=pegaNumeroRealDoUsuario("Digite a distância percorrida até a Caelum");//Digite a distância percorrida até a Caelum
+    document.write("Distância: " + converteDecimalPraTexto(distancia)+"km");
 </script>
 <h3>Carro:</h3>
 <script>
-    texto="Digite o valor do estacionamento";
-    var valor_estacionamento=pegaNumeroRealDoUsuario();//Digite o valor do estacionamento
-    var preco_por_litro=parseFloat(prompt("Digite o preço por litro da gasolina").replace(",", "."));
-    var consumo=parseFloat(prompt("Digite o consumo do carro").replace(",", "."));
+    var valor_estacionamento=pegaNumeroRealDoUsuario("Digite o valor do estacionamento");//Digite o valor do estacionamento
+    var preco_por_litro=pegaNumeroRealDoUsuario("Digite o preço por litro da gasolina");
+    var consumo=pegaNumeroRealDoUsuario("Digite o consumo do carro");
     var valor_gasolina= preco_por_litro/consumo*distancia
     var valor_gasto_carro=valor_estacionamento+valor_gasolina;
-    valor=valor_estacionamento;
-    document.write("Valor estacionamento: R$"+converteDecimalPraTexto()+"<br>");
-    valor=valor_gasolina;
-    document.write("Valor gasolina: R$"+converteDecimalPraTexto()+"<br>");
-    document.write("Valor gasto: R$"+valor_gasto_carro.toFixed(2).replace(".",",")+"<br>");
+    
+    document.write("Valor estacionamento: R$"+converteDecimalPraTexto(valor_estacionamento)+"<br>");
+    document.write("Valor gasolina: R$"+converteDecimalPraTexto(valor_gasolina)+"<br>");
+    document.write("Valor gasto: R$"+converteDecimalPraTexto(valor_gasto_carro)+"<br>");
 </script>
 
 
@@ -29,5 +23,5 @@
 <script>
     var taxa_inicial=2;
     var valor_gasto_uber=taxa_inicial+1.40*distancia;
-    document.write("Valor gasto: R$"+valor_gasto_uber.toFixed(2).replace(".",","));
+    document.write("Valor gasto: R$"+converteDecimalPraTexto(valor_gasto_uber));
 </script>
