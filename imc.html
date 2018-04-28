@@ -1,12 +1,9 @@
 <meta charset="utf-8">
 <script src="funcoes.js"></script>
 <script>
-    var texto;
     var valor;
-    texto = "Digite o seu peso";
-    var peso = pegaNumeroRealDoUsuario();
-    texto = "Digite a sua altura";
-    var altura = pegaNumeroRealDoUsuario();
+    var peso = pegaNumeroRealDoUsuario("Digite o seu peso");
+    var altura = pegaNumeroRealDoUsuario("Digite a sua altura");
     var imc = peso/Math.pow(altura,2);
     valor = imc;
     document.write("Seu IMC é: "+converteDecimalPraTexto());

@@ -1,4 +1,4 @@
-function pegaNumeroRealDoUsuario(){
+function pegaNumeroRealDoUsuario(texto){
         return parseFloat(prompt(texto).replace(",","."));
 }
 function converteDecimalPraTexto() {
