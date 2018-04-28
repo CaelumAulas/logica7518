@@ -1,6 +1,6 @@
-function pegaNumeroRealDoUsuario(texto){
-        return parseFloat(prompt(texto).replace(",","."));
+function pegaNumeroRealDoUsuario(frase){
+        return parseFloat(prompt(frase).replace(",","."));
 }
-function converteDecimalPraTexto() {
-        return valor.toFixed(2).replace(".",",");
+function converteDecimalPraTexto(decimal) {
+        return decimal.toFixed(2).replace(".",",");
 }
