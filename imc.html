@@ -5,4 +5,10 @@
     var altura = pegaNumeroRealDoUsuario("Digite a sua altura");
     var imc = peso/Math.pow(altura,2);
     document.write("Seu IMC é: "+converteDecimalPraTexto(imc));
+    if (imc < 18.5) { //se imc menor que 18.5
+        document.write("<br>Você está abaixo do peso");
+    }
+    if (imc >= 35) { //se imc maior ou igual a 35
+        document.write("<br>Você está obeso");
+    }
 </script>
