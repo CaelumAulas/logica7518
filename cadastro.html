@@ -1,17 +1,14 @@
 <h3>Cadastro:</h3>
 <script src="funcoes.js"></script>
 <script>
-   /* 
+   
     var nome = prompt("Digite o nome do cliente");
-    */
     var dataNascimento=prompt("Digite a data de nascimento do cliente");
-    /*
-    var idade;
     var sexo=prompt("Digite o sexo do cliente");
     var peso=pegaNumeroRealDoUsuario("Digite a peso do cliente");
     var altura=pegaNumeroRealDoUsuario("Digite a altura do cliente");
     var imc=peso/(altura**2);
-    */
+    
     var diaAtual=5;
     var mesAtual=5;
     var anoAtual=2018;
@@ -20,18 +17,6 @@
     var mesNascimento= parseInt(dataSeparada[1]);
     var anoNascimento=parseInt(dataSeparada[2]);
     var idade;
-
-
-
-
-
-
-
-
-
-
-
-
     if (mesNascimento < mesAtual) {
         idade=anoAtual-anoNascimento;
     }
@@ -47,13 +32,12 @@
     if (mesNascimento>mesAtual){
         idade=anoAtual-anoNascimento-1;
     }
-/*
+
     document.write("Nome: "+nome+"<br>");
-    document.write("Data Nascimento: "+dataNascimento+"<br>");*/
+    document.write("Data Nascimento: "+dataNascimento+"<br>");
     document.write("Idade: "+idade+" anos<br>");
-    /*
     document.write("Sexo: "+sexo+"<br>");
     document.write("Peso: "+converteDecimalPraTexto(peso)+"kg<br>");
     document.write("Altura: "+converteDecimalPraTexto(altura)+"<br>");
-    document.write("IMC: "+converteDecimalPraTexto(imc));*/
+    document.write("IMC: "+converteDecimalPraTexto(imc));
 </script>
