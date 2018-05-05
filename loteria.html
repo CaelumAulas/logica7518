@@ -1,0 +1,23 @@
+<meta charset="utf-8">
+<h2>Loteria</h2>
+<script>
+    var numeroEscolhido = parseInt(prompt("Digite um número de 0 a 10"));
+
+    var numeroSorteado = Math.round(Math.random()*10);
+    console.log(numeroSorteado);
+    if (numeroEscolhido == numeroSorteado) {
+        document.write("Acertou!!");
+    } else {
+        document.write("Errrrou!!");
+    }
+
+    /*
+    if (numeroEscolhido != numeroSorteado){
+        document.write("Errrrou!!");
+    }
+    */
+    /*if (numeroEscolhido>numeroSorteado || numeroEscolhido<numeroSorteado) {
+        document.write("Errrrou!!");
+    }
+    */
+</script>
