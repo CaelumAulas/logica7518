@@ -6,10 +6,12 @@
 
     var numeroEscolhido = parseInt(prompt("Digite um número de 0 a 10"));
 
-    if (isNaN(numeroEscolhido)) {
+    while (isNaN(numeroEscolhido)) {
         alert("Você digitou uma letra");
         numeroEscolhido=parseInt(prompt("Digite um número de 0 a 10"));
     }
+
+    
 
 
 
