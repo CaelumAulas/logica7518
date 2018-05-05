@@ -1,9 +1,20 @@
 <h3>Cadastro:</h3>
+<script src="funcoes.js"></script>
+<script>
+    var nome = prompt("Digite o nome do cliente");
+    var dataNascimento=prompt("Digite a data de nascimento do cliente");
+    var idade=prompt("Digite a idade do cliente");
+    var sexo=prompt("Digite o sexo do cliente");
+    var peso=pegaNumeroRealDoUsuario("Digite a peso do cliente");
+    var altura=pegaNumeroRealDoUsuario("Digite a altura do cliente");
+    var imc=peso/(altura**2);
 
-Nome: Ana<br>
-Data Nascimento: 05/10/2000<br>
-Idade: 17 anos<br>
-Sexo: F<br>
-Peso: 60kg<br>
-Altura: 1,53<br>
-IMC: 25,63
+
+    document.write("Nome: "+nome+"<br>");
+    document.write("Data Nascimento: "+dataNascimento+"<br>");
+    document.write("Idade: "+idade+" anos<br>");
+    document.write("Sexo: "+sexo+"<br>");
+    document.write("Peso: "+converteDecimalPraTexto(peso)+"kg<br>");
+    document.write("Altura: "+converteDecimalPraTexto(altura)+"<br>");
+    document.write("IMC: "+converteDecimalPraTexto(imc));
+</script>
