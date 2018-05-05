@@ -3,20 +3,35 @@
 <script>
    /* 
     var nome = prompt("Digite o nome do cliente");
+    */
     var dataNascimento=prompt("Digite a data de nascimento do cliente");
+    /*
     var idade;
     var sexo=prompt("Digite o sexo do cliente");
     var peso=pegaNumeroRealDoUsuario("Digite a peso do cliente");
     var altura=pegaNumeroRealDoUsuario("Digite a altura do cliente");
     var imc=peso/(altura**2);
-*/
+    */
     var diaAtual=5;
     var mesAtual=5;
     var anoAtual=2018;
-    var diaNascimento=pegaNumeroRealDoUsuario("Digite o dia de nascimento");
-    var mesNascimento=pegaNumeroRealDoUsuario("Digite o mês de nascimento");
-    var anoNascimento=pegaNumeroRealDoUsuario("Digite o ano de nascimento");
+    var dataSeparada = dataNascimento.split("/");
+    var diaNascimento= parseInt(dataSeparada[0]);
+    var mesNascimento= parseInt(dataSeparada[1]);
+    var anoNascimento=parseInt(dataSeparada[2]);
     var idade;
+
+
+
+
+
+
+
+
+
+
+
+
     if (mesNascimento < mesAtual) {
         idade=anoAtual-anoNascimento;
     }
